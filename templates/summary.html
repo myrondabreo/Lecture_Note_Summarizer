@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0e1a2b;
+            margin: 0;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .container {
+            background: #1c2b3a;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #ffffff;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        pre {
+            background-color: #0e1a2b;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #364f6b;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #ffffff;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #58a6ff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #85c1ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Summary Result</h1>
+        <h2>Summary:</h2>
+        <pre>{{ summary }}</pre>
+        <h2>Original Input:</h2>
+        <pre>{{ input_data }}</pre>
+        <a href="{{ url_for('home') }}">Go Back</a>
+    </div>
+</body>
+</html>
