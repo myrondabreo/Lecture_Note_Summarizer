@@ -87,6 +87,12 @@ If using ngrok or Colab, it will generate a **public URL** for testing.
 
 ---
 
+## 🖼️ Demo Screenshot
+
+![Lecture Notes Summarizer Screenshot](lecture_notes_summarizer_screenshot.png)
+
+---
+
 ## 📂 File Structure
 
 ```
